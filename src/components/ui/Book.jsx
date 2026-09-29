@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
@@ -25,7 +24,7 @@ const mountedRef = useRef(true);
       // When the component unmounts
       mountedRef.current = false;
     }
-  }, []);
+  }, [book.url]);
 
   return (
     <div className="book">
